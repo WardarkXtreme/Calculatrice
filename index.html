@@ -6,12 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./index.css" rel="stylesheet">
+    <link rel="icon" href="./calculator.ico" type="image/ico" sizes="128x128">
     <title>Calculator</title>
 </head>
 
 <body>
+    <div class="Memory">
+        <ol class="Group-memory_one">
+            <div class="Group-memory_two">
+                <li id="Memory-one">..........</li>
+                <li id="Memory-two">..........</li>
+                <li id="Memory-tree">..........</li>
+                <li id="Memory-four">..........</li>
+                <li id="Memory-five">..........</li>
+            </div>   
+            <div class="Group-memory_two">
+                <li id="Memory-six">..........</li>
+                <li id="Memory-seven">..........</li>
+                <li id="Memory-height">..........</li>
+                <li id="Memory-nine">..........</li>
+                <li id="Memory-ten">..........</li>
+            </div>
+        </ol>
+    </div>
     <div class="Calculator">
-        <div class="Screen"></div>
+        <div class="Screen">
+            <div><p class="lineOne">0</p></div>
+            <div id="Result"><p></p></div>
+        </div>
         <div class='Group-key'>
             <div class="Group-four-key">
                 <button class="Btn" id="MC">MC</button>
@@ -22,28 +44,28 @@
             </div>
             <div class="Group-four-key">
                 <button class="Btn" id="Percent">%</button>
-                <button class="Btn" id="7">7</button>
-                <button class="Btn" id="8">8</button>
-                <button class="Btn" id="9">9</button>
+                <button class="Btn" value="7" id="7">7</button>
+                <button class="Btn" value="8" id="8">8</button>
+                <button class="Btn" value="9" id="9">9</button>
                 <button class="Btn" id="Multiplication">*</button>
             </div>
             <div class="Group-four-key">
                 <button class="Btn" id="Square-root">√</button>
-                <button class="Btn" id="4">4</button>
-                <button class="Btn" id="5">5</button>
-                <button class="Btn" id="6">6</button>
+                <button class="Btn" value="4" id="4">4</button>
+                <button class="Btn" value="5" id="5">5</button>
+                <button class="Btn" value="6" id="6">6</button>
                 <button class="Btn" id="Less">-</button>
             </div>
             <div class="Group-four-key">
                 <button class="Btn" id="Corrector">C</button>
-                <button class="Btn" id="1">1</button>
-                <button class="Btn" id="2">2</button>
-                <button class="Btn" id="3">3</button>
+                <button class="Btn" value="1" id="1">1</button>
+                <button class="Btn" value="2" id="2">2</button>
+                <button class="Btn" value="3" id="3">3</button>
                 <button class="Btn" id="More">+</button>
             </div>
             <div class="Group-four-key">
                 <button class="Btn" id="AC">AC</button>
-                <button class="Btn" id="0">0</button>
+                <button class="Btn" value="0" id="0">0</button>
                 <button class="Btn" id="Point">.</button>
                 <button class="Btn" id="Equal">=</button>
             </div>
