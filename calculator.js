@@ -3,7 +3,8 @@ const reset = 0;
 let display = "";
 let operator = null;
 let memory;
-
+let arrayMemory = [{0: "", 1: "", 2: "", 3: "", 4: "", 5: "", 6: "", 7: "", 8: "", 9: ""}];
+console.log(arrayMemory)
 window.onload= () => {
     let keys = document.querySelectorAll(".Btn")
     for(let key of keys){
@@ -31,6 +32,7 @@ function managementKeys(){
                 lineOne.innerText = display;             
                 break;
             case "M+":
+                
                 break;
         }
     }
